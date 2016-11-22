@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		A6BB39471DE4BBA4001D4D8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6BB39461DE4BBA4001D4D8D /* main.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		A6BB39411DE4BBA4001D4D8D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,8 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A6BB39431DE4BBA4001D4D8D /* Game-Challange-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Game-Challange-1"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6BB39461DE4BBA4001D4D8D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A6BB39431DE4BBA4001D4D8D /* Game-Challange-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Game-Challange-1"; path = "/Users/christopher.dipaolo/Documents/Code/PersonalWork/GameChallanges/Game-Challenge-1/build/Debug/Game-Challange-1"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,25 +36,7 @@
 		A6BB393A1DE4BBA4001D4D8D = {
 			isa = PBXGroup;
 			children = (
-				A6BB39451DE4BBA4001D4D8D /* Game-Challange-1 */,
-				A6BB39441DE4BBA4001D4D8D /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		A6BB39441DE4BBA4001D4D8D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A6BB39431DE4BBA4001D4D8D /* Game-Challange-1 */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A6BB39451DE4BBA4001D4D8D /* Game-Challange-1 */ = {
-			isa = PBXGroup;
-			children = (
-				A6BB39461DE4BBA4001D4D8D /* main.cpp */,
-			);
-			path = "Game-Challange-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +82,7 @@
 				en,
 			);
 			mainGroup = A6BB393A1DE4BBA4001D4D8D;
-			productRefGroup = A6BB39441DE4BBA4001D4D8D /* Products */;
+			productRefGroup = A6BB393A1DE4BBA4001D4D8D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -119,7 +96,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BB39471DE4BBA4001D4D8D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +222,7 @@
 				A6BB394C1DE4BBA4001D4D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
