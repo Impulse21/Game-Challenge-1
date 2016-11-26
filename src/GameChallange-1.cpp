@@ -9,11 +9,7 @@
 #define MSG_ZOMBIE_INSERT	"Please enter the size of the zombie army:"
 #define MSG_STATS			"Number of zombies left: %i"
 
-struct STATS 
-{
-	int health;
-	int armour;
-};
+
 
 // Prototypes
 int getArmySizeInput(char * message);
@@ -22,10 +18,12 @@ int main()
 {
 	std::cout << MSG_INTRO;
 
-	int hunamArmySize = getArmySizeInput(MSG_HUMAN_INSERT);
-	int zombieArmySize = getArmySizeInput(MSG_ZOMBIE_INSERT);
+	Army humanArmy("HumanArmy");
+	Army zombieArmy("ZombieArmy");
 
-	
+	humanArmy.setArmySize(getArmySizeInput(MSG_HUMAN_INSERT);
+	zombieArmy.setArmySize(getArmySizeInput(MSG_ZOMBIE_INSERT);
+
     return 0;
 }
 
