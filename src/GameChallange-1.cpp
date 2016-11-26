@@ -3,6 +3,8 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "Army.h"
+#include "GameManager.h"
 
 #define MSG_INTRO			"Welcome to the war of humans vs zombies, here we will simulate the battle that will decide the outcome of the human race."
 #define MSG_HUMAN_INSERT	"Please enter the size of the human army:"
@@ -24,6 +26,11 @@ int main()
 	humanArmy.setArmySize(getArmySizeInput(MSG_HUMAN_INSERT);
 	zombieArmy.setArmySize(getArmySizeInput(MSG_ZOMBIE_INSERT);
 
+	GameManager game(humanArmy, zombieArmy);
+
+	game.Run();
+
+	// Check who won the game.
     return 0;
 }
 
