@@ -23,8 +23,18 @@ int main()
 	Army humanArmy("HumanArmy");
 	Army zombieArmy("ZombieArmy");
 
-	humanArmy.setArmySize(getArmySizeInput(MSG_HUMAN_INSERT);
-	zombieArmy.setArmySize(getArmySizeInput(MSG_ZOMBIE_INSERT);
+	//humanArmy.setArmySize(getArmySizeInput(MSG_HUMAN_INSERT);
+	//zombieArmy.setArmySize(getArmySizeInput(MSG_ZOMBIE_INSERT);
+
+	int humanArmySize = getArmySizeInput(MSG_HUMAN_INSERT);
+	int zombieArmySize = getArmySizeInput(MSG_HUMAN_INSERT);
+
+	bool gameOver = false;
+
+	while(!gameOver)
+	{
+		
+	}
 
 	GameManager game(humanArmy, zombieArmy);
 
@@ -32,6 +42,11 @@ int main()
 
 	// Check who won the game.
     return 0;
+}
+
+bool first(int &armyOne, int &armyTwo)
+{
+	// Random Gen 
 }
 
 int getArmySizeInput(char * message)
