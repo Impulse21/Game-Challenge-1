@@ -4,4 +4,4 @@ set( CMAKE_C_FLAGES "-Wall -g")
 file( GLOB SRCS *.cpp *.h)
 
 # Added to executer game-challangers
-add_executable( game-challangers $(SRCS) )
+add_executable(gamechallange GameChallange-1.cpp)
