@@ -3,12 +3,12 @@
 
 #include <iostream>
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
-#define MSG_INTRO			"Welcome to the war of humans vs zombies, here we will simulate the battle that will decide the outcome of the human race."
-#define MSG_HUMAN_INSERT	"Please enter the size of the human army:"
-#define MSG_ZOMBIE_INSERT	"Please enter the size of the zombie army:"
-#define MSG_STATS			"Number of zombies left: %i"
+#define MSG_INTRO			"Welcome to the war of humans vs zombies, here we will simulate the battle that will decide the outcome of the human race.\n"
+#define MSG_HUMAN_INSERT	"Please enter the size of the Human army:"
+#define MSG_ZOMBIE_INSERT	"Please enter the size of the Zombie army:"
 
 
 struct ARMY_STRUCT
@@ -25,7 +25,7 @@ void battle(ARMY_STRUCT &armyOne, ARMY_STRUCT &armyTwo);
 
 int main()
 {
-	std::cout << MSG_INTRO;
+	printf(MSG_INTRO);
 
 	ARMY_STRUCT humanArmy;
 	humanArmy.health = 200;
@@ -36,7 +36,7 @@ int main()
 	zombieArmy.attack = 50;
 
 	humanArmy.size = getArmySizeInput(MSG_HUMAN_INSERT);
-	zombieArmy.size = getArmySizeInput(MSG_HUMAN_INSERT);
+	zombieArmy.size = getArmySizeInput(MSG_ZOMBIE_INSERT);
 
 	// Set the random seed.
 	srand(time(NULL));
@@ -52,11 +52,11 @@ int main()
 
 	if(humanArmy.size > 0)
 	{
-		std::cout << "The Humans won with " << humanArmy.size << " left";
+		printf("The Humans won with %i left\n", humanArmy.size);
 	}
 	else
 	{
-		std::cout << "Zombies won with " << zombieArmy.size << " left";
+		printf("Zombies won with %u left\n", zombieArmy.size);
 	}
 
     return 0;
@@ -100,7 +100,7 @@ int getArmySizeInput(char * message)
 {
 	int armySize = 0;
 
-	std::cout << message;
+	printf(message);
 
 	std::cin >> armySize;
 
